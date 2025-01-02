@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Tindog Clone</title>
+    <style>
+        .colored-section {
+            height: 800px;
+            width: 100%;
+            background-color: #dc3545;
+            position: relative;
+
+        }
+
+        .navbar_tindog {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .title-image {
+            position: relative;
+            transform: rotate(25deg);
+            padding: 12px;
+            width: 300px;
+            height: 500px;
+
+        }
+
+        .info {
+            padding-left: 180px;
+
+        }
+
+        .text-info {
+            font-size: 50px;
+            font-family: 'Montserrat-Black', sans-serif;
+        }
+        .download-button {
+            margin: 5% 3% 5% 0;
+          }
+    </style>
+</head>
+
+<body>
+    <section class="colored-section bg-danger w-100">
+        <div>
+            <nav class="navbar navbar-expand-lg bg-danger">
+                <div class="container-fluid py-5 px-5">
+                    <a class="navbar_tindog navbar-brand col-sm-7 d-flex justify-content-around fs-1 text-light"
+                        href="#">TINDOG</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav fw-lighter">
+                            <a class="nav-link text-light" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link text-light" href="#">Pricing</a>
+                            <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="info row py-5 text-light d-flex justify-content-center">
+            <div class="col-lg-6 d-flex justify-content-center">
+                <h1 class="text-info text-light">Meet new<br>and<br>interesting<br>dogs<br>nearby.</h1>
+                
+            </div>
+            <div class="col-lg-6 d-flex justify-content-between ">
+                <img src="phtos2\iphone6.png" class="title-image" alt="img">
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
