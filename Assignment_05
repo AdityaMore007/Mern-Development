@@ -1,0 +1,126 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
+import './App.css';
+
+function App() {
+  return (
+    <Router>
+      <div className="navbar">
+        <h1 className="logo">MyReactSite</h1>
+        <nav>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/services" className="nav-link">Services</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+        </nav>
+      </div>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+function Home() {
+  return (
+    <div className="page">
+      <h2>Welcome to MyReactSite</h2>
+      <p>Your one-stop solution for modern web experiences!</p>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div className="page">
+      <h2>About Us</h2>
+      <p>We are a team of passionate developers creating stunning websites and apps.</p>
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <div className="page">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div className="page">
+      <h2>Contact Us</h2>
+      <p>Email: info@myreactsite.com</p>
+      <p>Phone: +123-456-7890</p>
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+export default App
+
+
+
+//App.css
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.page {
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+}
+
